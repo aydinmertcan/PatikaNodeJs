@@ -35,5 +35,5 @@ addBook({name:'book 4', author:'yazar 4'})
         console.log('Yeni Liste');
         listbooks();
     }).catch((error) => {
-        console.log(error)
+        console.log(error);
     });
