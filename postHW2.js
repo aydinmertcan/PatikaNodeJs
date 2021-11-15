@@ -3,7 +3,6 @@ let i = 3;
 posts.push({name: 'post 1', id : 0});
 posts.push({name: 'post 3', id : 2});
 posts.push({name: 'post 2', id : 1});
-console.log(posts);
 
 function addPost(post) {
     return new Promise((resolve, reject) => {
@@ -26,8 +25,8 @@ function orderPosts (arr) {
             arr.sort(function(a,b){
                 return b.id-a.id;
             });
-            console.log(arr)
             resolve('Postlar düzenlendi');
+            console.log(arr);
         } else {
             reject('Postlarınız düzenlenirken bir hata oluştu.')
         }
