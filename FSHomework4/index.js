@@ -1,9 +1,9 @@
 const fs = require('fs');
 //#region Write File
-// fs.writeFile('FSHomework4/employees.json', '{"name": "Employee 1 name", "salary": 2000}', 'utf8', (err,data) => {
-//     if(err) console.log('Error occured while file is writing...');
-//     console.log('Json file is successfully created.');
-// });
+fs.writeFile('FSHomework4/employees.json', '{"name": "Employee 1 name", "salary": 2000}', 'utf8', (err,data) => {
+    if(err) console.log('Error occured while file is writing...');
+    console.log('Json file is successfully created.');
+});
 //#endregion
 
 //#region Read File
